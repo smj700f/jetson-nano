@@ -181,6 +181,7 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 2
 ```
 sudo update-alternatives --config python
 
+```
 --顯示清單
 ```
 sudo update-alternatives --display python
