@@ -203,7 +203,7 @@ sudo update-alternatives --config python
 sudo update-alternatives --display python
 
 ```
-### 移除設定
+#### 移除設定
 ```
 sudo update-alternatives --remove-all python
 
