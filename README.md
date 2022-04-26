@@ -14,7 +14,7 @@
 - [opencv-python](#opencv-python)
 - [tkinter](#tkinter)
 - [設定python環境指令](#設定python環境指令)
-## 螢幕不休息 (using `rest`)
+## 螢幕不休息
 ```
 gsettings set org.gnome.desktop.session idle-delay 0
 
