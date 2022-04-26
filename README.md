@@ -4,12 +4,12 @@
 - [建置虛擬記憶體](#建置虛擬記憶體)
 - [設定虛擬記憶體使用率](#設定虛擬記憶體使用率)
 - [設定清除快取記憶體頻率](#設定清除快取記憶體頻率)
-- [設定CUDA環境變數](#設定CUDA環境變數)
+- [設定cuda環境變數](#設定cuda環境變數)
 - [建置jtop資源監視器](#建置jtop資源監視器)
-- [安裝Pytorch](#安裝Pytorch)
+- [安裝pytorch](#安裝pytorch)
 - [安裝torchvision](#安裝torchvision)
-- [安裝Jetcam](#安裝Jetcam)
-- [安裝Jupyter](#安裝Jupyter)
+- [安裝jetcam](#安裝jetcam)
+- [安裝jupyter](#安裝jupyter)
 - [安裝matplotlib](#安裝matplotlib)
 - [opencv-python](#opencv-python)
 - [tkinter](#tkinter)
@@ -35,7 +35,7 @@ sudo apt-get install nano
 ## 建置虛擬記憶體
 ```
 sudo swapon --show
-sudo fallocate -l 6G /swapfile
+sudo fallocate -l 6g /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
@@ -63,39 +63,39 @@ sudo nano /etc/sysctl.conf
 vm.vfs_cache_pressure = 500
 ```
 
-## 設定CUDA環境變數
+## 設定cuda環境變數
 ```
 sudo nano ~/.bashrc
 
 ```
 ```
-export CUDA_HOME=/usr/local/cuda-10.2
-export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
-export PATH=/usr/local/cuda-10.2/bin:$PATH
+export cuda_home=/usr/local/cuda-10.2
+export ld_library_path=/usr/local/cuda-10.2/lib64:$ld_library_path
+export path=/usr/local/cuda-10.2/bin:$path
 ```
 ```
 source ~/.bashrc
-nvcc -V
+nvcc -v
 
 ```
 ## 建置jtop資源監視器
 ```
 sudo apt-get install python3-pip python3-dev build-essential
-sudo -H pip3 install jetson-stats
+sudo -h pip3 install jetson-stats
 sudo systemctl restart jetson_stats.service
 sudo reboot
 
 ```
 
-## 安裝Pytorch 1.2.0
+## 安裝pytorch 1.2.0
 ```
 sudo apt-get install -y python3-pip libopenblas-base libopenmpi-dev
 
 ```
 ```
-wget https://nvidia.box.com/shared/static/06vlvedmqpqstu1dym49fo7aapgfyyu9.whl -O torch-1.2.0a0+8554416-cp36-cp36m-linux_aarch64.whl
+wget https://nvidia.box.com/shared/static/06vlvedmqpqstu1dym49fo7aapgfyyu9.whl -o torch-1.2.0a0+8554416-cp36-cp36m-linux_aarch64.whl
 sudo apt-get install python3-pip libopenblas-base libopenmpi-dev
-pip3 install Cython
+pip3 install cython
 pip3 install numpy torch-1.2.0a0+8554416-cp36-cp36m-linux_aarch64.whl
 
 ```
@@ -113,18 +113,18 @@ sudo python3 setup.py install
 cd ..
 
 ```
-## 安裝Jetcam
+## 安裝jetcam
 ```
-git clone https://github.com/NVIDIA-AI-IOT/jetcam
+git clone https://github.com/nvidia-ai-iot/jetcam
 cd jetcam
 sudo python3 setup.py install
 cd ..
 
 ```
 
-## 安裝Jupyter lab
+## 安裝jupyter lab
 ```
-sudo -H pip3 install --upgrade pip
+sudo -h pip3 install --upgrade pip
 pip3 install jupyter jupyterlab
 sudo reboot
 
@@ -135,8 +135,8 @@ nano -c ~/.jupyter/jupyter_lab_config.py
 
 ```
 ```
-c.ServerApp.allow_origin = '*'
-c.ServerApp.ip = '0.0.0.0'
+c.serverapp.allow_origin = '*'
+c.serverapp.ip = '0.0.0.0'
 ```
 ```
 jupyter lab password
@@ -147,15 +147,15 @@ sudo nano /etc/systemd/system/jupyter.service
 
 ```
 ```
-[Unit]
-Description=Jupyter Notebook
-[Service]
-Type=simple
-User=icshop
-ExecStart=/home/icshop/.local/bin/jupyter-lab --port 8888 --no-browser
-WorkingDirectory=/home/icshop/
-[Install]
-WantedBy=default.target
+[unit]
+description=jupyter notebook
+[service]
+type=simple
+user=icshop
+execstart=/home/icshop/.local/bin/jupyter-lab --port 8888 --no-browser
+workingdirectory=/home/icshop/
+[install]
+wantedby=default.target
 ```
 ```
 sudo systemctl enable jupyter
