@@ -1,4 +1,5 @@
 ## 螢幕不休息 (using `rest`)
+ˋˋˋ
 gsettings set org.gnome.desktop.session idle-delay 0
 
 ## 安裝pip3
