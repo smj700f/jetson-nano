@@ -1,7 +1,7 @@
 ## 螢幕不休息 (using `rest`)
-ˋˋˋ
+```rest
 gsettings set org.gnome.desktop.session idle-delay 0
-ˋˋˋ
+```
 ## 安裝pip3
 pip3 --version
 sudo apt-get update
