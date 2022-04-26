@@ -11,8 +11,8 @@
 - [安裝jetcam](#安裝jetcam)
 - [安裝jupyter](#安裝jupyter)
 - [安裝matplotlib](#安裝matplotlib)
-- [opencv-python](#opencv-python)
-- [tkinter](#tkinter)
+- [安裝opencv-python](#安裝opencv-python)
+- [安裝tkinter](#安裝tkinter)
 - [設定python環境指令](#設定python環境指令)
 ## 螢幕不休息
 ```
