@@ -128,6 +128,7 @@ cd ..
 ```
 
 ## 安裝jupyter
+#### jupyter lab
 ```
 sudo -h pip3 install --upgrade pip
 pip3 install jupyter jupyterlab
