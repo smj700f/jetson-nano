@@ -9,7 +9,7 @@
 - [安裝Pytorch](#安裝Pytorch)
 - [安裝torchvision](#安裝torchvision)
 - [安裝Jetcam](#安裝Jetcam)
-- [安裝Jupyter lab](#安裝Jupyter lab)
+- [安裝Jupyter](#安裝Jupyter)
 - [安裝matplotlib](#安裝matplotlib)
 - [opencv-python](#opencv-python)
 - [tkinter](#tkinter)
