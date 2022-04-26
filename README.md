@@ -1,10 +1,10 @@
 ## 螢幕不休息 (using `rest`)
-```rest
+```
 gsettings set org.gnome.desktop.session idle-delay 0
 
 ```
 ## 安裝pip3
-```pip3
+```
 sudo apt-get update
 sudo apt-get -y install python3-pip
 pip3 install --upgrade pip
@@ -12,12 +12,12 @@ pip3 --version
 
 ```
 ## 安裝nano文字編輯器
-```nano
+```
 sudo apt-get install nano
 
 ```
 ## 建置虛擬記憶體
-```build virtual memory
+```
 sudo swapon --show
 sudo fallocate -l 6G /swapfile
 sudo chmod 600 /swapfile
@@ -29,7 +29,7 @@ sudo free -h
 
 ```
 ## 設定虛擬記憶體使用率
-```virtual memory use rate
+```
 cat /proc/sys/vm/swappiness
 sudo nano /etc/sysctl.conf
 ```
@@ -38,7 +38,7 @@ vm.swappiness=10
 ```
 
 ## 設定清除快取記憶體頻率
-```clear cache memory
+```
 cat /proc/sys/vm/vfs_cache_pressure
 sudo nano /etc/sysctl.conf
 
@@ -48,16 +48,16 @@ vm.vfs_cache_pressure = 500
 ```
 
 ## 設定CUDA環境變數
-```set CUDA
+```
 sudo nano ~/.bashrc
 
 ```
-```write export CUDA
+```
 export CUDA_HOME=/usr/local/cuda-10.2
 export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
 export PATH=/usr/local/cuda-10.2/bin:$PATH
 ```
-```enable CUDA
+```
 source ~/.bashrc
 nvcc -V
 
@@ -185,6 +185,7 @@ sudo update-alternatives --config python
 ```
 sudo update-alternatives --display python
 
+```
 --移除設定
 ```
 sudo update-alternatives --remove-all python
