@@ -1,4 +1,8 @@
 - [螢幕不休息](#螢幕不休息)
+- [安裝pip3](#安裝pip3)
+- [安裝nano文字編輯器](#安裝nano文字編輯器)
+- [建置虛擬記憶體](#建置虛擬記憶體)
+- [設定虛擬記憶體使用率](#設定虛擬記憶體使用率)
 ## 螢幕不休息 (using `rest`)
 ```
 gsettings set org.gnome.desktop.session idle-delay 0
