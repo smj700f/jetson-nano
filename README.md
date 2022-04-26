@@ -1,6 +1,7 @@
 ## 螢幕不休息 (using `rest`)
 ```rest
 gsettings set org.gnome.desktop.session idle-delay 0
+
 ```
 ## 安裝pip3
 ```pip3
@@ -8,10 +9,12 @@ sudo apt-get update
 sudo apt-get -y install python3-pip
 pip3 install --upgrade pip
 pip3 --version
+
 ```
 ## 安裝nano文字編輯器
 ```nano
 sudo apt-get install nano
+
 ```
 ## 建置虛擬記憶體
 ```build virtual memory
@@ -23,6 +26,7 @@ sudo swapon /swapfile
 sudo bash -c 'echo "/swapfile swap swap defaults 0 0" >> /etc/fstab'
 sudo swapon --show
 sudo free -h
+
 ```
 ## 設定虛擬記憶體使用率
 ```virtual memory use rate
