@@ -6,8 +6,8 @@
 - [設定清除快取記憶體頻率](#設定清除快取記憶體頻率)
 - [設定cuda環境變數](#設定cuda環境變數)
 - [建置jtop資源監視器](#建置jtop資源監視器)
-- [安裝pytorch-1.2.0](#安裝pytorch-1.2.0)
-- [安裝torchvision-0.4.0](#安裝torchvision-0.4.0)
+- [安裝pytorch_1.2.0](#安裝pytorch-1.2.0)
+- [安裝torchvision_0.4.0](#安裝torchvision-0.4.0)
 - [安裝jetcam](#安裝jetcam)
 - [安裝jupyter](#安裝jupyter)
 - [安裝matplotlib](#安裝matplotlib)
@@ -90,7 +90,7 @@ sudo reboot
 
 ```
 
-## 安裝pytorch-1.2.0
+## 安裝pytorch_1.2.0
 ```
 sudo apt-get install -y python3-pip libopenblas-base libopenmpi-dev
 
@@ -103,7 +103,7 @@ pip3 install numpy torch-1.2.0a0+8554416-cp36-cp36m-linux_aarch64.whl
 
 ```
 
-## 安裝torchvision-0.4.0
+## 安裝torchvision_0.4.0
 ```
 pip3 install setuptools
 sudo apt-get install -y libjpeg-dev libfreetype6-dev pkg-config libpng-dev libhdf5-serial-dev hdf5-tools libhdf5-dev
