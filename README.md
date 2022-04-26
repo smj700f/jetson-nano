@@ -49,7 +49,8 @@ sudo free -h
 cat /proc/sys/vm/swappiness
 sudo nano /etc/sysctl.conf
 ```
-```write virtual memory use rate
+#### 寫入
+```
 vm.swappiness=10
 ```
 
@@ -59,7 +60,8 @@ cat /proc/sys/vm/vfs_cache_pressure
 sudo nano /etc/sysctl.conf
 
 ```
-```write clear cache memory
+#### 寫入
+```
 vm.vfs_cache_pressure = 500
 ```
 
@@ -68,6 +70,7 @@ vm.vfs_cache_pressure = 500
 sudo nano ~/.bashrc
 
 ```
+#### 寫入
 ```
 export cuda_home=/usr/local/cuda-10.2
 export ld_library_path=/usr/local/cuda-10.2/lib64:$ld_library_path
@@ -134,6 +137,7 @@ jupyter lab --generate-config
 nano -c ~/.jupyter/jupyter_lab_config.py
 
 ```
+#### 寫入
 ```
 c.serverapp.allow_origin = '*'
 c.serverapp.ip = '0.0.0.0'
@@ -146,6 +150,7 @@ jupyter lab password
 sudo nano /etc/systemd/system/jupyter.service
 
 ```
+#### 寫入
 ```
 [unit]
 description=jupyter notebook
@@ -175,30 +180,30 @@ pip3 install opencv-python
 
 ```
 ## 安裝tkinter
---python 2
+#### python 2
 ```
 sudo apt-get install python-tk
 
 ```
---python 3
+#### python 3
 ```
 sudo apt-get install python3-tk
 
 ```
 ## 設定python環境指令
---1優先、2次之
+#### 1優先、2次之
 ```
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
 ```
 ```
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 2
 ```
---切換環境模式
+#### 切換環境模式
 ```
 sudo update-alternatives --config python
 
 ```
---顯示清單
+#### 顯示清單
 ```
 sudo update-alternatives --display python
 
