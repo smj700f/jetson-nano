@@ -90,7 +90,7 @@ sudo reboot
 
 ```
 
-## 安裝pytorch_1.2.0
+## 安裝pytorch
 ```
 sudo apt-get install -y python3-pip libopenblas-base libopenmpi-dev
 
@@ -103,7 +103,7 @@ pip3 install numpy torch-1.2.0a0+8554416-cp36-cp36m-linux_aarch64.whl
 
 ```
 
-## 安裝torchvision_0.4.0
+## 安裝torchvision
 ```
 pip3 install setuptools
 sudo apt-get install -y libjpeg-dev libfreetype6-dev pkg-config libpng-dev libhdf5-serial-dev hdf5-tools libhdf5-dev
@@ -125,7 +125,7 @@ cd ..
 
 ```
 
-## 安裝jupyter lab
+## 安裝jupyter
 ```
 sudo -h pip3 install --upgrade pip
 pip3 install jupyter jupyterlab
