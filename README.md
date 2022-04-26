@@ -191,10 +191,11 @@ sudo apt-get install python3-tk
 
 ```
 ## 設定python環境指令
-#### 1優先、2次之
+#### 設定python3.6 為1優先
 ```
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
 ```
+#### 設定python2.7 為2次之
 ```
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 2
 ```
