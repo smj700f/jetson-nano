@@ -91,6 +91,7 @@ sudo reboot
 ```
 
 ## 安裝pytorch
+#### verion 1.2.0
 ```
 sudo apt-get install -y python3-pip libopenblas-base libopenmpi-dev
 
@@ -104,6 +105,7 @@ pip3 install numpy torch-1.2.0a0+8554416-cp36-cp36m-linux_aarch64.whl
 ```
 
 ## 安裝torchvision
+#### torchvision 0.4.0
 ```
 pip3 install setuptools
 sudo apt-get install -y libjpeg-dev libfreetype6-dev pkg-config libpng-dev libhdf5-serial-dev hdf5-tools libhdf5-dev
