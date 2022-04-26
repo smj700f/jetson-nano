@@ -1,3 +1,4 @@
+- [螢幕不休息](#螢幕不休息)
 ## 螢幕不休息 (using `rest`)
 ```
 gsettings set org.gnome.desktop.session idle-delay 0
