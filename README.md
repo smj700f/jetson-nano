@@ -3,6 +3,17 @@
 - [安裝nano文字編輯器](#安裝nano文字編輯器)
 - [建置虛擬記憶體](#建置虛擬記憶體)
 - [設定虛擬記憶體使用率](#設定虛擬記憶體使用率)
+- [設定清除快取記憶體頻率](#設定清除快取記憶體頻率)
+- [設定CUDA環境變數](#設定CUDA環境變數)
+- [建置jtop資源監視器](#建置jtop資源監視器)
+- [安裝Pytorch 1.2.0](#安裝Pytorch 1.2.0)
+- [安裝torchvision 0.4.0](#安裝torchvision 0.4.0)
+- [安裝Jetcam](#安裝Jetcam)
+- [安裝Jupyter lab](#安裝Jupyter lab)
+- [安裝matplotlib](#安裝matplotlib)
+- [opencv-python](#opencv-python)
+- [tkinter](#tkinter)
+- [設定python環境指令](#設定python環境指令)
 ## 螢幕不休息 (using `rest`)
 ```
 gsettings set org.gnome.desktop.session idle-delay 0
