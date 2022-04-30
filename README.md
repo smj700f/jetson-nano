@@ -228,7 +228,7 @@ gedit ~/.bashrc
 ```
 cd 你自己的路徑
 ```
-#### 系統優化參數設定
+## 系統優化參數設定
 ```
 sudo nano /etc/sysctl.conf
 ```
