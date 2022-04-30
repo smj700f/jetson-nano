@@ -92,10 +92,7 @@ sudo reboot
 
 ## 安裝pytorch
 #### verion 1.2.0
-#### 配合nv-jetson-nano-sd-card-image-r32.3.1-jp4.3.0-20191217系統版本
-```
-https://developer.nvidia.com/jetson-nano-sd-card-image-r3231
-```
+- [配合jetson-nano系統版本-r32.3.1-jp4.3.0-20191217](https://developer.nvidia.com/jetson-nano-sd-card-image-r3231)
 ```
 sudo apt-get install -y python3-pip libopenblas-base libopenmpi-dev
 
