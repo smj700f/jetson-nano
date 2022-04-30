@@ -14,6 +14,7 @@
 - [安裝opencv-python](#安裝opencv-python)
 - [安裝tkinter](#安裝tkinter)
 - [設定python環境指令](#設定python環境指令)
+- [設定終端機預設路徑](#設定終端機預設路徑)
 ## 螢幕不休息
 ```
 gsettings set org.gnome.desktop.session idle-delay 0
@@ -218,13 +219,12 @@ sudo update-alternatives --display python
 sudo update-alternatives --remove-all python
 
 ```
-## 改變終端機預設路徑
+## 設定終端機預設路徑
 ```
 gedit ~/.bashrc
 
 ```
 #### 寫入
-#### exmple: cd mypath
 ```
 cd 你自己的路徑
 ```
