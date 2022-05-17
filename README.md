@@ -228,3 +228,8 @@ gedit ~/.bashrc
 ```
 cd 你自己的路徑
 ```
+## 安裝kazam 螢幕錄製/螢幕截圖
+```
+sudo apt-get install kazam
+
+```
