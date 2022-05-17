@@ -15,6 +15,7 @@
 - [安裝tkinter](#安裝tkinter)
 - [設定python環境指令](#設定python環境指令)
 - [設定終端機預設路徑](#設定終端機預設路徑)
+- [安裝kazam螢幕錄製/螢幕截圖](#安裝kazam螢幕錄製/螢幕截圖)
 ## 螢幕不休息
 ```
 gsettings set org.gnome.desktop.session idle-delay 0
@@ -228,7 +229,7 @@ gedit ~/.bashrc
 ```
 cd 你自己的路徑
 ```
-## 安裝kazam 螢幕錄製/螢幕截圖
+## 安裝kazam螢幕錄製/螢幕截圖
 ```
 sudo apt-get install kazam
 
