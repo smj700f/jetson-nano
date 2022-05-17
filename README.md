@@ -229,8 +229,10 @@ gedit ~/.bashrc
 ```
 cd 你自己的路徑
 ```
-## 安裝kazam
+## 安裝SimpleScreenRecorder
 ```
-sudo apt-get install kazam
+sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
+sudo apt update
+sudo apt install simplescreenrecorder
 
 ```
