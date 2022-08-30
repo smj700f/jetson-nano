@@ -1,3 +1,7 @@
+- [暫時沒有GUI系統畫面](#暫時禁用GUI系統畫面)
+- [暫時有GUI系統畫面](#暫時啟用GUI系統畫面)
+- [永久禁用GUI系統畫面](#永久禁用GUI系統畫面)
+- [永久啟用GUI系統畫面](#永久啟用GUI系統畫面)
 - [螢幕不休息](#螢幕不休息)
 - [安裝pip3](#安裝pip3)
 - [安裝nano文字編輯器](#安裝nano文字編輯器)
@@ -16,6 +20,26 @@
 - [設定python環境指令](#設定python環境指令)
 - [設定終端機預設路徑](#設定終端機預設路徑)
 - [安裝SimpleScreenRecorder - 螢幕錄製](#安裝SimpleScreenRecorder)
+## 暫時禁用GUI系統畫面
+```
+sudo init 3 
+
+```
+## 暫時啟用GUI系統畫面
+```
+sudo init 5 
+
+```
+## 永久禁用GUI系統畫面
+```
+sudo systemctl set-default multi-user.target
+
+```
+## 永久啟用GUI系統畫面
+```
+sudo systemctl set-default graphical.target
+
+```
 ## 螢幕不休息
 ```
 gsettings set org.gnome.desktop.session idle-delay 0
